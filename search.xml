@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[CocoaPods的安装和卸载]]></title>
+    <url>%2F2017%2F05%2F10%2FCocoaPods%2F</url>
+    <content type="text"><![CDATA[CocoaPods的安装和卸载CocoaPods的安装1.打开Mac终端2.查找Ruby的环境1gem sources -l 3.使用Ruby China镜像替换Ruby的默认源，按顺序执行以下命令。12$ gem sources --remove https://rubygems.org/$ gem sources -a https://gems.ruby-china.org/ 4.更新Mac的gem1sudo gem update -n /usr/local/bin —system 5.安装CocoaPods123标准版本：sudo gem install -n /usr/local/bin cocoapods最新版：sudo gem install -n /usr/local/bin cocoapods --pre指定版本：sudo gem install -n /usr/local/bin cocoapods -v 1.2.0.beta.1 注：可以根据自己的需要选择性的执行。 当报错下面图文时 执行如下命令： 1pod setup 6.安装成功后查看CocoaPods版本1pod --version 成功输出后则表示安装完成了，接下来就可以愉快的玩耍了 = =！。 CocoaPods的卸载1.移除pod组件先执行下面的命令找到CocoaPods的组件： 1which pod 然后我们根据输出，手动移除这个组件，命令如下： 1sudo rm -rf &lt;path&gt; 其中的&lt;path&gt;就是上面输出的地址。 2.移除 RubyGems 中的 CocoaPods 程序包Q: RubyGems是什么?A: RubyGems（简称 gems）是一个用于对 Ruby组件进行打包的 Ruby 打包系统。 它提供一个分发 Ruby 程序和库的标准格式，还提供一个管理程序包安装的工具。 先找到gems中本地程序包 1gem list 如下图 移除程序包 1sudo gem uninstall cocoapods -v 1.2.0.beta.3 成功后继续输入 1sudo gem uninstall cocoapods-core -v 1.2.0.beta.1 成功后则表示卸载CocoaPods完成，然后我们又可以接上一开始的安装步骤开始安装CocoaPods了😂。]]></content>
+      <categories>
+        <category>脑补技术</category>
+      </categories>
+      <tags>
+        <tag>CocoaPods</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F05%2F08%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[虽然是按照教程来的，可还是整了好久才整出来 = =，心好累啊！ 为什么要写博客？ 这篇博客做为技术人员为什么要写博客就谈到了一些写博客的好处，比如，可以强化知识点、提升学习能力、提升文字组织能力和逻辑思维能力等。我个人觉得说的挺好。刚好公司的项目最近没那么紧了，趁着现在有时间就来学着写写博客（啊。。。！好。。。紧张啊，要开始装逼了😂）。 Hello World 程序员嘛，你懂的。。。1print(&quot;Hello World&quot;) 万事开头难，希望自己不仅要走好这开头的这一步，也要走好走好以后的每一步！]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+</search>
